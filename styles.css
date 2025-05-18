@@ -1,13 +1,68 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>PC!</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <h1 class="title">PC Club! </h1>
-      <p id="currentTime"></p>
-      <script src="script.js"></script>
-  </body>
-  <img src="https://code.org/images/fill-480x360/tutorials/hoc2023/danceparty_ai.jpg" alt="Italian Trulli" height="200p" width="300p">
-</html>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #45a049;
+}
+
+.active-button {
+  background-color: #007BFF; /* Nice blue */
+  color: white;
+  box-shadow: 0 0 15px 5px #007BFF;
+  font-weight: bold;
+}
+
+.slide-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.site-footer {
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+  font-size: 0.9em;
+}
+
+.site-footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-top: 10px;
+}

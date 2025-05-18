@@ -1,7 +1,12 @@
-function showTime() {
-	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+function goToPage(page) {
+  window.location.href = page;
 }
-showTime();
-setInterval(function () {
-	showTime();
-}, 1000);
+
+document.querySelectorAll('.nav-button').forEach(button => {
+  const page = button.getAttribute('data-page');
+  button.onclick = () => goToPage(page);
+
+  if (window.location.pathname.endsWith(page)) {
+    button.classList.add('active-button');
+  }
+});
