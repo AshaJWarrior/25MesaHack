@@ -5,4 +5,4 @@
 4)  We only need to delete these  
 Number 1 [here](https://github.com/AshaJWarrior/25MesaHack/blob/PC-Club-Raj_V1/index%20(1).html)  
 Number 2 [here](https://github.com/AshaJWarrior/25MesaHack/blob/PC-Club-Raj_V1/script%20(1).js)  
-Number 3 [herr](https://github.com/AshaJWarrior/25MesaHack/blob/PC-Club-Raj_V1/styles%20(1).css)  
+Number 3 [here](https://github.com/AshaJWarrior/25MesaHack/blob/PC-Club-Raj_V1/styles%20(1).css)  
