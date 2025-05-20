@@ -1,57 +1,53 @@
-body {
-  font-family: Arial, sans-serif;
+/* Layout Container */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  gap: 30px;
+}
+
+/* Left: Blog + About Us */
+.content-left {
+  flex: 2;
+  min-width: 300px;
+}
+
+/* Right: Calendar */
+.calendar-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.calendar-right h2 {
   text-align: center;
-  margin-top: 100px;
-  background-color: #f0f0f0;
+  margin-bottom: 15px;
 }
 
-h1 {
-  font-size: 3em;
-  margin-bottom: 50px;
+/* About Us Section */
+.about-section,
+.blog-section {
+  margin-bottom: 40px;
 }
 
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+.blog-post {
+  background: #f9f9f9;
+  padding: 15px;
+  border-left: 5px solid #007BFF;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
-.nav-button {
-  padding: 15px 30px;
-  font-size: 1.2em;
-  cursor: pointer;
-  border: none;
-  background-color: #4CAF50;
-  color: white;
-  border-radius: 10px;
-  transition: background-color 0.3s;
-}
-
-.nav-button:hover {
-  background-color: #45a049;
-}
-
-.active-button {
-  background-color: #007BFF; /* Nice blue */
-  color: white;
-  box-shadow: 0 0 15px 5px #007BFF;
-  font-weight: bold;
-}
-
-.slide-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
+/* Responsive Footer */
 .site-footer {
   background-color: #222;
   color: #eee;
   text-align: center;
   padding: 20px 10px;
-  margin-top: 50px;
   font-size: 0.9em;
+  margin-top: 50px;
 }
 
 .site-footer a {
@@ -65,4 +61,16 @@ h1 {
 
 .social-links {
   margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .calendar-right {
+    order: -1;
+    margin-bottom: 30px;
+  }
 }
