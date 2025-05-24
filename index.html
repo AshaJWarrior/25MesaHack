@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <meta charset="UTF-8">
   <title>My Cool Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <link id="theme-style" rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -38,6 +38,37 @@
   <button class="nav-button" data-page="Projects.html">
     <i class="fa-solid fa-diagram-project"></i> Projects
   </button>
+  
+  <button id="theme-toggle" onclick="toggleDarkMode()">
+    <i id="theme-icon" class="fas"></i> Toggle Dark Mode
+  </button>
+
+  <script>
+    const themeLink = document.getElementById('theme-style');
+    const icon = document.getElementById('theme-icon');
+
+    // Load theme on page load
+    function applySavedTheme() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      const isDark = savedTheme === 'dark';
+
+      themeLink.setAttribute('href', isDark ? 'styles-dark.css' : 'styles.css');
+      icon.classList.remove('fa-moon', 'fa-sun');
+      icon.classList.add(isDark ? 'fa-sun' : 'fa-moon');
+    }
+
+    // Toggle theme and store preference
+    function toggleDarkMode() {
+      const isCurrentlyDark = themeLink.getAttribute('href') === 'styles-dark.css';
+      const newTheme = isCurrentlyDark ? 'light' : 'dark';
+
+      localStorage.setItem('theme', newTheme);
+      applySavedTheme();
+    }
+
+    // Apply on page load
+    window.addEventListener('DOMContentLoaded', applySavedTheme);
+  </script>
 </div>
 
   <script src="script.js"></script>
