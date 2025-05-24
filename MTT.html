@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cool Website</title>
+  <link id="theme-style" rel="stylesheet" href="styles.css">
+  <script src="theme.js" defer></script>
+</head>
 <body>
 
   <h1>PC Club</h1>
@@ -22,6 +28,9 @@
   <button class="nav-button" data-page="Projects.html">
     <i class="fa-solid fa-diagram-project"></i> Projects
   </button>
+ <button onclick="toggleDarkMode()" class="theme-toggle-button">
+  <i id="theme-icon" class="fas"></i> Toggle Dark Mode
+  </button>
 </div>
 
   <script src="script.js"></script>
@@ -32,20 +41,25 @@
   <div class="team-grid">
     <!-- Team Member 1 -->
     <div class="team-card">
-      <h3>Alex Rivera</h3>
-      <p><strong>Position:</strong> Club President</p>
-      <p><strong>Year:</strong> Senior</p>
-      <p><strong>About:</strong> Alex is the founder and visionary behind our club. He’s always brainstorming creative projects and keeping everyone motivated.</p>
-      <p><strong>Fun Fact:</strong> Has a black belt in taekwondo 🥋</p>
+      <h3>Asha Johny Warrior</h3>
+      <p><strong>Position:</strong>Club Advisor</p>
+      <p><strong>About:</strong> Ms. Warrior is our lovely club advisor and the anchor to our ship. 
+  Helping us get club funds, attend events, meet professionals, and even teach us any 
+  Programming language we need, Ms. Warrior is an important part our organization, and we 
+  couldn't ask for better mentor</p>
+      <p><strong>Fun Fact:</strong> </p>
       <blockquote>"Let’s code it and *then* fix it!"</blockquote>
     </div>
 
     <!-- Team Member 2 -->
     <div class="team-card">
-      <h3>Jasmine Lee</h3>
-      <p><strong>Position:</strong> Vice President</p>
+      <h3>Jasmine Morisseau:</h3>
+      <p><strong>Position:</strong>> Club President 1</p>
       <p><strong>Year:</strong> Junior</p>
-      <p><strong>About:</strong> Jasmine keeps the team on track and brings ideas to life with her design magic and planning skills.</p>
+      <p><strong>About:</strong>Jasmine is the PC Club's First President and an essential leader
+  to our club. In charge of organizing meetings, facilitating communication, finding competitions, 
+  and creating projects, Jasmine is like the wind in our sails, always pushing us forward and 
+  getting us closer to the places we need to go.</p>
       <p><strong>Fun Fact:</strong> Has visited 12 countries! 🌍</p>
       <blockquote>"We’re not lost, we’re exploring."</blockquote>
     </div>
