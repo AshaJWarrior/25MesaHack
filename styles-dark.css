@@ -1,4 +1,4 @@
-/* === Dark Mode CSS using .dark-mode class (Flexbox Enhanced) === */
+/* === Dark Mode CSS using .dark-mode class === */
 
 .dark-mode {
   font-family: Arial, sans-serif;
@@ -7,9 +7,6 @@
   text-align: center;
   color: #f0f0f0;
   transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 .dark-mode h1 {
@@ -25,22 +22,16 @@
   max-width: 1200px;
   padding: 0 20px;
   gap: 30px;
-  flex: 1;
 }
 
 .dark-mode .content-left {
   flex: 2;
   min-width: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .dark-mode .calendar-right {
   flex: 1;
   min-width: 280px;
-  display: flex;
-  flex-direction: column;
 }
 
 .dark-mode .calendar-right h2 {
@@ -62,9 +53,6 @@
   border-radius: 8px;
   color: #d4d4dc;
   box-shadow: 0 0 10px #000000aa;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .dark-mode .site-footer {
@@ -127,7 +115,6 @@
   justify-content: center;
   text-align: center;
   background: rgba(30, 30, 47, 0.8);
-  padding: 20px;
 }
 
 .dark-mode .hero-text h1 {
@@ -219,14 +206,15 @@
   box-shadow: 0 4px 12px #000000aa;
   text-align: left;
   color: #d4d4dc;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .dark-mode .team-card h3 {
   color: #3794ff;
   margin-bottom: 10px;
+}
+
+.dark-mode .team-card p {
+  margin: 5px 0;
 }
 
 .dark-mode .team-card blockquote {
@@ -282,15 +270,17 @@
   max-width: 600px;
   margin: 0 auto;
   box-shadow: 0 4px 12px #000000aa;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .dark-mode .signup-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.dark-mode .signup-form label {
+  font-weight: bold;
+  color: #d4d4dc;
 }
 
 .dark-mode .signup-form input,
@@ -324,13 +314,6 @@
   background: #1e6ae8;
 }
 
-.dark-mode .resource-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
 .dark-mode .resource-buttons button {
   display: inline-flex;
   align-items: center;
@@ -338,10 +321,24 @@
   color: #1e1e2f;
   border: none;
   padding: 12px 20px;
+  margin: 8px;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.dark-mode .resource-buttons button i {
+  margin-right: 8px;
+}
+
+.dark-mode .resource-buttons button:hover {
+  background-color: #1e6ae8;
+}
+
+.dark-mode .resource-buttons button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
 }
 
 .dark-mode .preview-card {
@@ -352,9 +349,11 @@
   margin: 0 auto;
   box-shadow: 0 4px 12px #000000aa;
   color: #d4d4dc;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+}
+
+.dark-mode .preview-card h2 {
+  color: #3794ff;
+  margin-bottom: 15px;
 }
 
 .dark-mode .preview-card iframe {
@@ -362,6 +361,18 @@
   height: 400px;
   border: 1px solid #3794ff;
   border-radius: 8px;
+}
+
+.dark-mode .preview-card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #3794ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dark-mode .preview-card a:hover {
+  text-decoration: underline;
 }
 
 .dark-mode #theme-toggle {
@@ -389,6 +400,11 @@
 
 .dark-mode #theme-toggle:hover #theme-icon {
   transform: rotate(180deg);
+}
+
+.dark-mode button {
+  padding: 10px 15px;
+  font-size: 1rem;
 }
 
 .dark-mode .theme-toggle-button {
