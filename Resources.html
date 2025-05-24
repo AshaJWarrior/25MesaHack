@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Club Resources</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Cool Website</title>
+  <link id="theme-style" rel="stylesheet" href="styles.css">
+  <script src="theme.js" defer></script>
 </head>
 <body>
   <h1><i class="fa-solid fa-toolbox"></i> Club Resources</h1>
 
-  <div class="button-container">
-    <button class="nav-button" data-page="index.html">
-      <i class="fa-solid fa-house"></i> Home
-    </button>
-    <button class="nav-button" data-page="Resources.html">
-      <i class="fa-solid fa-file"></i> Resources
-    </button>
-    <button class="nav-button" data-page="SignUp.html">
-      <i class="fa-solid fa-user-plus"></i> Sign Up
-    </button>
-    <button class="nav-button" data-page="MTT.html">
-      <i class="fa-solid fa-people-group"></i> Meet the Team
-    </button>
-    <button class="nav-button" data-page="Projects.html">
-      <i class="fa-solid fa-diagram-project"></i> Projects
-    </button>
-  </div>
+<div class="button-container">
+  <button class="nav-button" data-page="index.html">
+    <i class="fa-solid fa-house"></i> Home
+  </button>
+  <button class="nav-button" data-page="Resources.html">
+    <i class="fa-solid fa-file"></i> Resources
+  </button>
+  <button class="nav-button" data-page="SignUp.html">
+    <i class="fa-solid fa-user-plus"></i> Sign Up
+  </button>
+  <button class="nav-button" data-page="MTT.html">
+    <i class="fa-solid fa-people-group"></i> Meet the Team
+  </button>
+  <button class="nav-button" data-page="Projects.html">
+    <i class="fa-solid fa-diagram-project"></i> Projects
+  </button>
+ <button onclick="toggleDarkMode()" class="theme-toggle-button">
+  <i id="theme-icon" class="fas"></i> Toggle Dark Mode
+  </button>
+</div>
 
   <section>
     <h2><i class="fa-solid fa-door-open"></i> Getting Started</h2>

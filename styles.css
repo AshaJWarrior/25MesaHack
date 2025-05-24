@@ -365,3 +365,28 @@ button {
   padding: 10px 15px;
   font-size: 1rem;
 }
+.theme-toggle-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: 2px solid #007BFF;
+  background-color: white;
+  color: #007BFF;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.15);
+}
+
+.theme-toggle-button:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+.theme-toggle-button i {
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
