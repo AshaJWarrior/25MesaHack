@@ -1,110 +1,102 @@
+<!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Club Resources</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
-<body>
-
-  <h1>PC Club</h1>
-
-<div class="button-container">
-  <button class="nav-button" data-page="index.html">
-    <i class="fa-solid fa-house"></i> Home
-  </button>
-  <button class="nav-button" data-page="Resources.html">
-    <i class="fa-solid fa-file"></i> Resources
-  </button>
-  <button class="nav-button" data-page="SignUp.html">
-    <i class="fa-solid fa-user-plus"></i> Sign Up
-  </button>
-  <button class="nav-button" data-page="MTT.html">
-    <i class="fa-solid fa-people-group"></i> Meet the Team
-  </button>
-  <button class="nav-button" data-page="Projects.html">
-    <i class="fa-solid fa-diagram-project"></i> Projects
-  </button>
-</div>
-
-  <script src="script.js"></script>
-</body>
+</head>
 <body>
   <h1><i class="fa-solid fa-toolbox"></i> Club Resources</h1>
 
+  <div class="button-container">
+    <button class="nav-button" data-page="index.html">
+      <i class="fa-solid fa-house"></i> Home
+    </button>
+    <button class="nav-button" data-page="Resources.html">
+      <i class="fa-solid fa-file"></i> Resources
+    </button>
+    <button class="nav-button" data-page="SignUp.html">
+      <i class="fa-solid fa-user-plus"></i> Sign Up
+    </button>
+    <button class="nav-button" data-page="MTT.html">
+      <i class="fa-solid fa-people-group"></i> Meet the Team
+    </button>
+    <button class="nav-button" data-page="Projects.html">
+      <i class="fa-solid fa-diagram-project"></i> Projects
+    </button>
+  </div>
+
   <section>
     <h2><i class="fa-solid fa-door-open"></i> Getting Started</h2>
-    <ul>
-      <li><a href="#">Welcome Guide (PDF)</a></li>
-      <li><a href="#">Club Charter</a></li>
-      <li><a href="#">Roles & Responsibilities</a></li>
-    </ul>
+    <div class="button-container">
+      <button class="nav-button" onclick="location.href='welcome_guide.pdf'"><i class="fa-solid fa-book"></i> Welcome Guide (PDF)</button>
+      <button class="nav-button" onclick="location.href='club_charter.pdf'"><i class="fa-solid fa-scroll"></i> Club Charter</button>
+      <button class="nav-button" onclick="location.href='roles_responsibilities.pdf'"><i class="fa-solid fa-user-gear"></i> Roles & Responsibilities</button>
+    </div>
   </section>
 
   <section>
     <h2><i class="fa-solid fa-screwdriver-wrench"></i> Tools & Platforms</h2>
-    <ul>
-      <li><a href="#">Google Drive</a></li>
-      <li><a href="#">Replit</a></li>
-      <li><a href="#">GitHub</a></li>
-      <li><a href="#">Canva / Figma</a></li>
-      <li><a href="#">Discord Server</a></li>
-    </ul>
+    <div class="button-container">
+      <button class="nav-button" onclick="location.href='https://drive.google.com'"><i class="fa-brands fa-google-drive"></i> Google Drive</button>
+      <button class="nav-button" onclick="location.href='https://replit.com'"><i class="fa-solid fa-code"></i> Replit</button>
+      <button class="nav-button" onclick="location.href='https://github.com'"><i class="fa-brands fa-github"></i> GitHub</button>
+      <button class="nav-button" onclick="location.href='https://canva.com'"><i class="fa-solid fa-pen-ruler"></i> Canva / Figma</button>
+      <button class="nav-button" onclick="location.href='https://discord.com'"><i class="fa-brands fa-discord"></i> Discord Server</button>
+    </div>
   </section>
 
   <section>
     <h2><i class="fa-solid fa-calendar-days"></i> Important Dates</h2>
-    <ul>
-      <li><a href="#">Club Calendar</a></li>
-      <li>Project Deadlines</li>
-      <li>MESA Day: April 12, 2025</li>
-    </ul>
+    <div class="button-container">
+      <button class="nav-button" onclick="location.href='calendar.html'"><i class="fa-solid fa-calendar"></i> Club Calendar</button>
+      <button class="nav-button" disabled><i class="fa-solid fa-clock"></i> Project Deadlines</button>
+      <button class="nav-button" disabled><i class="fa-solid fa-hourglass-half"></i> MESA Day: April 12, 2025</button>
+    </div>
   </section>
 
   <section>
     <h2><i class="fa-solid fa-folder-open"></i> Templates & Docs</h2>
-    <ul>
-      <li><a href="#">Meeting Minutes Template</a></li>
-      <li><a href="#">Slide Deck Template</a></li>
-      <li><a href="#">Event Planning Checklist</a></li>
-      <li><a href="#">Budget Sheet</a></li>
-    </ul>
+    <div class="button-container">
+      <button class="nav-button" onclick="location.href='meeting_minutes.html'"><i class="fa-solid fa-clipboard-list"></i> Meeting Minutes Template</button>
+      <button class="nav-button" onclick="location.href='slide_template.html'"><i class="fa-solid fa-file-powerpoint"></i> Slide Deck Template</button>
+      <button class="nav-button" onclick="location.href='event_checklist.html'"><i class="fa-solid fa-check-double"></i> Event Planning Checklist</button>
+      <button class="nav-button" onclick="location.href='budget_sheet.html'"><i class="fa-solid fa-coins"></i> Budget Sheet</button>
+    </div>
   </section>
 
   <section>
     <h2><i class="fa-solid fa-lightbulb"></i> Learning Resources</h2>
-    <ul>
-      <li><a href="#">HTML/CSS Crash Course</a></li>
-      <li><a href="#">JavaScript Basics</a></li>
-      <li><a href="#">Python for Beginners</a></li>
-      <li><a href="#">MDN Docs</a></li>
-      <li><a href="#">W3Schools</a></li>
-    </ul>
+    <div class="button-container">
+      <button class="nav-button" onclick="location.href='html_course.html'"><i class="fa-brands fa-html5"></i> HTML/CSS Crash Course</button>
+      <button class="nav-button" onclick="location.href='js_basics.html'"><i class="fa-brands fa-js"></i> JavaScript Basics</button>
+      <button class="nav-button" onclick="location.href='python_beginners.html'"><i class="fa-brands fa-python"></i> Python for Beginners</button>
+      <button class="nav-button" onclick="location.href='https://developer.mozilla.org'"><i class="fa-solid fa-book-open"></i> MDN Docs</button>
+      <button class="nav-button" onclick="location.href='https://w3schools.com'"><i class="fa-solid fa-graduation-cap"></i> W3Schools</button>
+    </div>
   </section>
 
   <section>
     <h2><i class="fa-solid fa-rocket"></i> Past Projects</h2>
-    <ul>
-      <li><a href="#">Project Repo 1 (GitHub)</a></li>
-      <li><a href="#">Presentation Folder</a></li>
-      <li><a href="#">Demo Video</a></li>
-    </ul>
+    <div class="button-container">
+      <button class="nav-button" onclick="location.href='https://github.com/project1'"><i class="fa-solid fa-folder-tree"></i> Project Repo 1</button>
+      <button class="nav-button" onclick="location.href='presentation_folder.html'"><i class="fa-solid fa-folder"></i> Presentation Folder</button>
+      <button class="nav-button" onclick="location.href='demo_video.html'"><i class="fa-solid fa-play"></i> Demo Video</button>
+    </div>
   </section>
 
   <section>
     <h2><i class="fa-solid fa-box"></i> Extras</h2>
-    <ul>
-      <li><a href="#">Download Club Logo</a></li>
-      <li><a href="#">Brand Colors & Fonts</a></li>
-      <li><a href="#">Club Social Media QR Codes</a></li>
-      <li><a href="#">Club FAQ</a></li>
-    </ul>
+    <div class="button-container">
+      <button class="nav-button" onclick="location.href='club_logo.png'"><i class="fa-solid fa-image"></i> Download Club Logo</button>
+      <button class="nav-button" onclick="location.href='brand_guide.html'"><i class="fa-solid fa-palette"></i> Brand Colors & Fonts</button>
+      <button class="nav-button" onclick="location.href='social_qr.html'"><i class="fa-solid fa-qrcode"></i> Club Social Media QR Codes</button>
+      <button class="nav-button" onclick="location.href='faq.html'"><i class="fa-solid fa-circle-question"></i> Club FAQ</button>
+    </div>
   </section>
 
-  <script src="script.js"></script>
-</body>
-<body>
-  <div class="page">
-    <h1>Resources ex</h1>
-  </div>
-</body>
- <footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-content">
       <p>&copy; 2025 Pookie & Co. All rights reserved.</p>
       <p>Contact us: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
@@ -116,4 +108,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
+</body>
 </html>
