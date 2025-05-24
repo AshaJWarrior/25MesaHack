@@ -1,19 +1,20 @@
-/* === Dark Mode CSS based on your light CSS + VS Code Dark+ theme === */
+/* === Dark Mode CSS using .dark-mode class === */
 
-body {
+.dark-mode {
   font-family: Arial, sans-serif;
-  background: #1e1e2f; /* Dark background */
+  background: #121212;
   padding: 40px;
   text-align: center;
-  color: #d4d4dc; /* Light text */
+  color: #f0f0f0;
+  transition: all 0.3s ease;
 }
 
-h1 {
-  color: #569cd6; /* VS Code blue */
+.dark-mode h1 {
+  color: #569cd6;
   margin-bottom: 30px;
 }
 
-.main-container {
+.dark-mode .main-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -23,29 +24,29 @@ h1 {
   gap: 30px;
 }
 
-.content-left {
+.dark-mode .content-left {
   flex: 2;
   min-width: 300px;
 }
 
-.calendar-right {
+.dark-mode .calendar-right {
   flex: 1;
   min-width: 280px;
 }
 
-.calendar-right h2 {
+.dark-mode .calendar-right h2 {
   text-align: center;
   margin-bottom: 15px;
   color: #569cd6;
 }
 
-.about-section,
-.blog-section {
+.dark-mode .about-section,
+.dark-mode .blog-section {
   margin-bottom: 40px;
 }
 
-.blog-post {
-  background: #252535; /* Darker card */
+.dark-mode .blog-post {
+  background: #252535;
   padding: 15px;
   border-left: 5px solid #3794ff;
   margin-bottom: 20px;
@@ -54,7 +55,7 @@ h1 {
   box-shadow: 0 0 10px #000000aa;
 }
 
-.site-footer {
+.dark-mode .site-footer {
   background-color: #1e1e2f;
   color: #d4d4dc;
   text-align: center;
@@ -64,37 +65,37 @@ h1 {
   box-shadow: inset 0 1px 0 #3794ff44;
 }
 
-.site-footer a {
+.dark-mode .site-footer a {
   color: #3794ff;
   text-decoration: none;
 }
 
-.site-footer a:hover {
+.dark-mode .site-footer a:hover {
   text-decoration: underline;
 }
 
-.social-links {
+.dark-mode .social-links {
   margin-top: 10px;
 }
 
 @media (max-width: 768px) {
-  .main-container {
+  .dark-mode .main-container {
     flex-direction: column;
   }
 
-  .calendar-right {
+  .dark-mode .calendar-right {
     order: -1;
     margin-bottom: 30px;
   }
 }
 
-.hero-section {
+.dark-mode .hero-section {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
 
-.background-slideshow {
+.dark-mode .background-slideshow {
   position: absolute;
   top: 0;
   left: 0;
@@ -105,7 +106,7 @@ h1 {
   border: none;
 }
 
-.hero-text {
+.dark-mode .hero-text {
   position: relative;
   z-index: 2;
   height: 100%;
@@ -113,10 +114,10 @@ h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgba(30, 30, 47, 0.8); /* Darker overlay */
+  background: rgba(30, 30, 47, 0.8);
 }
 
-.hero-text h1 {
+.dark-mode .hero-text h1 {
   color: #d4d4dc;
   font-size: 3rem;
   font-weight: bold;
@@ -125,7 +126,7 @@ h1 {
   border-radius: 10px;
 }
 
-.button-container {
+.dark-mode .button-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -133,7 +134,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-.nav-button {
+.dark-mode .nav-button {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -148,49 +149,49 @@ h1 {
   font-weight: 600;
 }
 
-.nav-button i {
+.dark-mode .nav-button i {
   font-size: 1.1rem;
   color: #3794ff;
 }
 
-.nav-button:hover {
+.dark-mode .nav-button:hover {
   background-color: #3794ff;
   color: #1e1e2f;
 }
 
-.nav-button:hover i {
+.dark-mode .nav-button:hover i {
   color: #1e1e2f;
 }
 
-.active-button {
+.dark-mode .active-button {
   background-color: #3794ff;
   color: #1e1e2f;
   box-shadow: 0 0 12px #3794ffaa;
 }
 
-.active-button i {
+.dark-mode .active-button i {
   color: #1e1e2f;
 }
 
-.team-section {
+.dark-mode .team-section {
   padding: 40px 20px;
   background-color: #252535;
   text-align: center;
   color: #d4d4dc;
 }
 
-.team-section h2 {
+.dark-mode .team-section h2 {
   font-size: 2.5rem;
   color: #569cd6;
   margin-bottom: 30px;
 }
 
-.team-section h2 i {
+.dark-mode .team-section h2 i {
   margin-right: 10px;
   color: #3794ff;
 }
 
-.team-grid {
+.dark-mode .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
@@ -198,7 +199,7 @@ h1 {
   margin: 0 auto;
 }
 
-.team-card {
+.dark-mode .team-card {
   background-color: #2d2d44;
   border-radius: 12px;
   padding: 20px;
@@ -207,16 +208,16 @@ h1 {
   color: #d4d4dc;
 }
 
-.team-card h3 {
+.dark-mode .team-card h3 {
   color: #3794ff;
   margin-bottom: 10px;
 }
 
-.team-card p {
+.dark-mode .team-card p {
   margin: 5px 0;
 }
 
-.team-card blockquote {
+.dark-mode .team-card blockquote {
   margin-top: 10px;
   font-style: italic;
   color: #a0a0c0;
@@ -224,7 +225,7 @@ h1 {
   padding-left: 10px;
 }
 
-section {
+.dark-mode section {
   background: #252535;
   padding: 20px;
   border-radius: 10px;
@@ -232,37 +233,37 @@ section {
   box-shadow: 0 4px 12px #000000aa;
 }
 
-section h2 {
+.dark-mode section h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: #3794ff;
 }
 
-ul {
+.dark-mode ul {
   list-style: none;
   padding-left: 0;
 }
 
-li {
+.dark-mode li {
   margin: 10px 0;
   color: #d4d4dc;
 }
 
-i {
+.dark-mode i {
   margin-right: 8px;
   color: #3794ff;
 }
 
-a {
+.dark-mode a {
   color: #3794ff;
   text-decoration: none;
 }
 
-a:hover {
+.dark-mode a:hover {
   text-decoration: underline;
 }
 
-.signup-section {
+.dark-mode .signup-section {
   background: #252535;
   padding: 30px;
   border-radius: 10px;
@@ -271,20 +272,20 @@ a:hover {
   box-shadow: 0 4px 12px #000000aa;
 }
 
-.signup-form {
+.dark-mode .signup-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.signup-form label {
+.dark-mode .signup-form label {
   font-weight: bold;
   color: #d4d4dc;
 }
 
-.signup-form input,
-.signup-form select,
-.signup-form textarea {
+.dark-mode .signup-form input,
+.dark-mode .signup-form select,
+.dark-mode .signup-form textarea {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #3794ff;
@@ -293,12 +294,12 @@ a:hover {
   color: #d4d4dc;
 }
 
-.signup-form input::placeholder,
-.signup-form textarea::placeholder {
+.dark-mode .signup-form input::placeholder,
+.dark-mode .signup-form textarea::placeholder {
   color: #7a7a9a;
 }
 
-.signup-form button {
+.dark-mode .signup-form button {
   background: #3794ff;
   color: #1e1e2f;
   padding: 12px;
@@ -309,11 +310,11 @@ a:hover {
   transition: background 0.3s ease;
 }
 
-.signup-form button:hover {
+.dark-mode .signup-form button:hover {
   background: #1e6ae8;
 }
 
-.resource-buttons button {
+.dark-mode .resource-buttons button {
   display: inline-flex;
   align-items: center;
   background-color: #3794ff;
@@ -327,20 +328,20 @@ a:hover {
   transition: background-color 0.3s ease;
 }
 
-.resource-buttons button i {
+.dark-mode .resource-buttons button i {
   margin-right: 8px;
 }
 
-.resource-buttons button:hover {
+.dark-mode .resource-buttons button:hover {
   background-color: #1e6ae8;
 }
 
-.resource-buttons button:disabled {
+.dark-mode .resource-buttons button:disabled {
   background-color: #555;
   cursor: not-allowed;
 }
 
-.preview-card {
+.dark-mode .preview-card {
   background: #252535;
   border-radius: 12px;
   padding: 20px;
@@ -350,19 +351,19 @@ a:hover {
   color: #d4d4dc;
 }
 
-.preview-card h2 {
+.dark-mode .preview-card h2 {
   color: #3794ff;
   margin-bottom: 15px;
 }
 
-.preview-card iframe {
+.dark-mode .preview-card iframe {
   width: 100%;
   height: 400px;
   border: 1px solid #3794ff;
   border-radius: 8px;
 }
 
-.preview-card a {
+.dark-mode .preview-card a {
   display: inline-block;
   margin-top: 15px;
   color: #3794ff;
@@ -370,10 +371,11 @@ a:hover {
   font-weight: bold;
 }
 
-.preview-card a:hover {
+.dark-mode .preview-card a:hover {
   text-decoration: underline;
 }
-#theme-toggle {
+
+.dark-mode #theme-toggle {
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -387,28 +389,25 @@ a:hover {
   transition: all 0.3s ease;
 }
 
-#theme-toggle:hover {
+.dark-mode #theme-toggle:hover {
   background-color: #007BFF;
   color: white;
 }
 
-#theme-icon {
+.dark-mode #theme-icon {
   transition: transform 0.3s ease;
 }
 
-#theme-toggle:hover #theme-icon {
+.dark-mode #theme-toggle:hover #theme-icon {
   transform: rotate(180deg);
 }
-body {
-  background: #121212;
-  color: #f0f0f0;
-  transition: all 0.3s ease;
-}
-button {
+
+.dark-mode button {
   padding: 10px 15px;
   font-size: 1rem;
 }
-.theme-toggle-button {
+
+.dark-mode .theme-toggle-button {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -424,12 +423,12 @@ button {
   box-shadow: 0 2px 6px rgba(0, 191, 255, 0.25);
 }
 
-.theme-toggle-button:hover {
+.dark-mode .theme-toggle-button:hover {
   background-color: #00bfff;
   color: #1e1e1e;
 }
 
-.theme-toggle-button i {
+.dark-mode .theme-toggle-button i {
   font-size: 1.1rem;
   transition: color 0.3s;
 }

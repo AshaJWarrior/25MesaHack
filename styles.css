@@ -73,6 +73,16 @@
     order: -1;
     margin-bottom: 30px;
   }
+
+  .nav-button,
+  .theme-toggle-button {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+
+  .team-section h2 {
+    font-size: 2rem;
+  }
 }
 
 .hero-section {
@@ -100,7 +110,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgba(0, 0, 0, 0.4); /* Optional overlay for readability */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .hero-text h1 {
@@ -157,6 +167,7 @@
 .active-button i {
   color: white;
 }
+
 .team-section {
   padding: 40px 20px;
   background-color: #f9f9f9;
@@ -206,18 +217,23 @@
   border-left: 3px solid #007BFF;
   padding-left: 10px;
 }
+
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f9;
   padding: 30px;
   color: #333;
+  transition: all 0.3s ease;
+  text-align: center;
 }
+
 h1 {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2.5rem;
   color: #007BFF;
 }
+
 section {
   background: white;
   padding: 20px;
@@ -225,29 +241,36 @@ section {
   margin-bottom: 25px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 section h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: #007BFF;
 }
+
 ul {
   list-style: none;
   padding-left: 0;
 }
+
 li {
   margin: 10px 0;
 }
+
 i {
   margin-right: 8px;
   color: #007BFF;
 }
+
 a {
   color: #007BFF;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 .signup-section {
   background: white;
   padding: 30px;
@@ -256,15 +279,18 @@ a:hover {
   margin: 0 auto;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .signup-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .signup-form label {
   font-weight: bold;
   color: #333;
 }
+
 .signup-form input,
 .signup-form select,
 .signup-form textarea {
@@ -273,6 +299,7 @@ a:hover {
   border: 1px solid #ccc;
   font-size: 1rem;
 }
+
 .signup-form button {
   background: #007BFF;
   color: white;
@@ -283,19 +310,9 @@ a:hover {
   cursor: pointer;
   transition: background 0.3s ease;
 }
+
 .signup-form button:hover {
   background: #0056b3;
-}
-body {
-  font-family: Arial, sans-serif;
-  background: #f0f2f5;
-  padding: 40px;
-  text-align: center;
-}
-
-h1 {
-  color: #333;
-  margin-bottom: 30px;
 }
 
 .preview-card {
@@ -330,6 +347,7 @@ h1 {
 .preview-card a:hover {
   text-decoration: underline;
 }
+
 #theme-toggle {
   display: inline-flex;
   align-items: center;
@@ -356,15 +374,7 @@ h1 {
 #theme-toggle:hover #theme-icon {
   transform: rotate(180deg);
 }
-body {
-  background: white;
-  color: black;
-  transition: all 0.3s ease;
-}
-button {
-  padding: 10px 15px;
-  font-size: 1rem;
-}
+
 .theme-toggle-button {
   display: flex;
   align-items: center;
