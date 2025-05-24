@@ -113,7 +113,7 @@ h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: rgba(30, 30, 47, 0.8); /* Darker overlay */
+  background: rgba(30, 30, 47, 0.8); /* Darker overlay*/
 }
 
 .hero-text h1 {
@@ -399,6 +399,7 @@ a:hover {
 #theme-toggle:hover #theme-icon {
   transform: rotate(180deg);
 }
+
 body {
   background: #121212;
   color: #f0f0f0;
