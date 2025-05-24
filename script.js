@@ -1,23 +1,16 @@
-function goToPage(page) {
-  window.location.href = page;
-}
-document.addEventListener("DOMContentLoaded", () => {
-  const currentPage = window.location.pathname.split("/").pop();
-  document.querySelectorAll(".nav-button").forEach(btn => {
-    if (btn.dataset.page === currentPage) {
-      btn.classList.add("active-button");
-    }
+// Navigate on nav-button click
+document.querySelectorAll('.nav-button').forEach(button => {
+  button.addEventListener('click', () => {
+    window.location.href = button.dataset.page;
   });
 });
-function goToPage(page) {
-  window.location.href = page;
-}
 
-document.querySelectorAll('.nav-button').forEach(button => {
-  const page = button.getAttribute('data-page');
-  button.onclick = () => goToPage(page);
-
-  if (window.location.pathname.endsWith(page)) {
-    button.classList.add('active-button');
-  }
+// Highlight active nav button based on current page URL
+document.addEventListener('DOMContentLoaded', () => {
+  const currentPage = window.location.pathname.split('/').pop();
+  document.querySelectorAll('.nav-button').forEach(button => {
+    if (button.dataset.page.toLowerCase() === currentPage.toLowerCase()) {
+      button.classList.add('active-button');
+    }
+  });
 });
