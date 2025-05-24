@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   margin: 40px auto;
   max-width: 1200px;
   padding: 0 20px;
@@ -11,13 +12,13 @@
 
 /* Left: Blog + About Us */
 .content-left {
-  flex: 2;
+  flex: 2 1 60%;
   min-width: 300px;
 }
 
 /* Right: Calendar */
 .calendar-right {
-  flex: 1;
+  flex: 1 1 35%;
   min-width: 280px;
 }
 
@@ -64,6 +65,18 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+  .main-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .content-left,
+  .calendar-right {
+    flex: 1 1 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .main-container {
     flex-direction: column;
@@ -76,12 +89,33 @@
 
   .nav-button,
   .theme-toggle-button {
-    font-size: 0.9rem;
-    padding: 8px 14px;
+    font-size: 0.95rem;
+    padding: 9px 16px;
   }
 
   .team-section h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-button,
+  .theme-toggle-button {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .team-section h2 {
+    font-size: 1.7rem;
+  }
+
+  .team-card {
+    padding: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
   }
 }
 
